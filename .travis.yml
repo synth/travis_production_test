@@ -1,10 +1,4 @@
 language: ruby
 
-services:
-  - riak
-
-before_install:
-  - sudo service riak start
-  
 script:
   - true
