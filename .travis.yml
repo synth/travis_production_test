@@ -1,23 +1,15 @@
-language: python
-
-python:
-  - pypy
+language: ruby
 
 sudo: false
-
-addons:
-  apt:
-    packages:
-      - pypy
-      - pypy-dev
 
 install:
   - true
 
 script:
   - true
-  
-deploy:
-  - provider: s3
-    foo: bar
-  
+
+notifications:
+  irc:
+    channels:
+      - "chat.freenode.net#travisstaging"
+
