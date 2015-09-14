@@ -10,6 +10,4 @@ script:
 
 notifications:
   irc:
-    channels:
-      - secure: "XDt8bJIqPVeytllWubyYQ7YMxy8nKZ/kc8jjM/1EyUxKVvBzHg1Dd5fY9p+iXFeTT/vF3ISLEkBMujo0Z0CSVciHQklCV1BMlcHzg23oMVu1BsyfPcendT1jFr749D0ARq+0FTGQXbfsy3T4IomzzjAHo6DnYz5gg7Ph2o+WHeE="
-
+    - secure: "kHjfGONwZsQBFaXJMkHt69EEy6f7jBZXLR9PFt+93pLyCvii48/gHgQ59jaati/XrVr8TklV5B77eaL9FXYa3GmMaRdN/3sNtFQ4K71lIVRvakG0nVZjpU4YGkd+gQu+F2Cx7b6qQYuIPRlbNy+hufx05PxEvggno0k5ftLn1J8="
