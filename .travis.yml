@@ -11,5 +11,5 @@ script:
 notifications:
   irc:
     channels:
-      - "chat.freenode.net#travisstaging"
+      - secure: "XDt8bJIqPVeytllWubyYQ7YMxy8nKZ/kc8jjM/1EyUxKVvBzHg1Dd5fY9p+iXFeTT/vF3ISLEkBMujo0Z0CSVciHQklCV1BMlcHzg23oMVu1BsyfPcendT1jFr749D0ARq+0FTGQXbfsy3T4IomzzjAHo6DnYz5gg7Ph2o+WHeE="
 
