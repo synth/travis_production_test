@@ -11,8 +11,5 @@ script:
 notifications:
   irc:
     channels:
-      - secure: "kHjfGONwZsQBFaXJMkHt69EEy6f7jBZXLR9PFt+93pLyCvii48/gHgQ59jaati/XrVr8TklV5B77eaL9FXYa3GmMaRdN/3sNtFQ4K71lIVRvakG0nVZjpU4YGkd+gQu+F2Cx7b6qQYuIPRlbNy+hufx05PxEvggno0k5ftLn1J8="
-  slack:
-    rooms:
-      - secure: "U5pvtq/KfoiTC08p8qCAvA4mB4b3/klt03GFsQuFApHm6MYL3YRw+u3451ma19j77/a3g+fPB6QU0R+5l7kBwyItNjMBm2hhSK+IeJYfgM0H2rh8zc/91i+N4X0E+hcb8ACDduJyV/5ychmvss5N9oHM25dRMSzrE6HGpSl+QKc="
+      - secure: "dSznAbLrYmUG1mAAPYi453v4YzMW9zca3RawHrtpvmdLytTAxAxIYhmgG17XLlCO1qT+9/bYaAIYk/JETatxbjI1mi8KIsd6S50pdZaKPtkhLGugU46/5kR7sBq8J4kVOB5MOmVNfrRSHIAOukCb3YZ9j4YUB9CcSyLscKny83c="
 
