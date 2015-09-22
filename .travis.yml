@@ -1,4 +1,4 @@
-lanuguage: php
+language: php
 
 php:
   - hhvm 
