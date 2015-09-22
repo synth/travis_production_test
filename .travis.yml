@@ -9,3 +9,9 @@ before_install:
   - eval "npm install -g npm@$(jq .engines.npm package.json)"
   - npm --version
 
+install:
+  - true
+
+script:
+  - true
+
