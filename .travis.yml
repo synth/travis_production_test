@@ -1,13 +1,12 @@
-﻿language: go
+lanuguage: php
 
-go:
-  - 1.5
-  - tip
+php:
+  - hhvm 
 
 sudo: false
 
 install:
   - true
 script:
-  - true
+  - ls -l /etc/hhvm/php.ini
 
