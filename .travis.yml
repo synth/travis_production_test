@@ -1,8 +1,12 @@
-language: java
-dist: trusty
+language: perl
+
+sudo: false
+
+perl:
+  - 5.20
 
 install:
   - true
 script:
-  - java -version
+  - true
 
