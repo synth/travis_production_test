@@ -15,3 +15,8 @@ install:
 script:
   - true
 
+deploy:
+  provider: script
+  script: true
+  on:
+    all_branches: true
