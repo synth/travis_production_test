@@ -17,6 +17,6 @@ script:
 
 deploy:
   provider: script
-  script: true
+  script: "true"
   on:
     all_branches: true
