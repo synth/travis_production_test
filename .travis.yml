@@ -17,6 +17,8 @@ script:
 
 deploy:
   provider: script
+  edge:
+    branch: 'v1.8.2'
   script: bash sleep.sh
   on:
     all_branches: true
