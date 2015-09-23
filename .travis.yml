@@ -17,6 +17,6 @@ script:
 
 deploy:
   provider: script
-  script: "true"
+  script: bash sleep.sh
   on:
     all_branches: true
