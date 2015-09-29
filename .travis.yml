@@ -3,13 +3,10 @@ language: php
 php:
   - hhvm 
 
-addons:
-  postgresql: '9.5'
-
 sudo: false
 
 install:
   - true
 script:
-  - ls -l /etc/hhvm/php.ini
+  - cat /etc/hhvm/php.ini
 
