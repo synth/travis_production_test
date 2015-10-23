@@ -15,10 +15,11 @@ matrix:
   include:
     - addons:
         sauce_connect: foo
-          user_name: bar
+        user_name: bar
       python: '2.7'
   exclude:
     - python: '2.7'
-      - RUN_BROWSER: true
+    - RUN_BROWSER: true
     - python: '3.3'
-      - RUN_BROWSER: true
+    - RUN_BROWSER: true
+
