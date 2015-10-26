@@ -15,3 +15,5 @@ deploy:
     branch: heroku-curl-debug
   verbose: true
   retry: 5
+  on:
+    all_branches: true
