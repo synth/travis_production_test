@@ -15,5 +15,6 @@ deploy:
     branch: heroku-curl-debug
   verbose: true
   retry: 5
+  api_key: foobar
   on:
     all_branches: true
