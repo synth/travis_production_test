@@ -9,4 +9,9 @@ install: true
 
 script: true
 
-
+deploy:
+  provider: heroku
+  edge:
+    branch: heroku-curl-debug
+  verbose: true
+  retry: 5
