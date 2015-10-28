@@ -14,3 +14,4 @@ install: true
 script:
   - cat ~/apt-get-update.log
   - elasticsearch -v
+  - curl http://localhost:9200/
