@@ -2,10 +2,14 @@ language: ruby
 
 sudo: false
 
+addons:
+  apt:
+    souces:
+      - elasticsearch-1.7
+    packages:
+      - elasticsearch
+
 install: true
 
 script:
   - true
-
-cache:
-  bundler: true
