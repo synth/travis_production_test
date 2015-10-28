@@ -4,7 +4,7 @@ sudo: false
 
 addons:
   apt:
-    souces:
+    sources:
       - elasticsearch-1.7
     packages:
       - elasticsearch
