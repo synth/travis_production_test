@@ -11,6 +11,9 @@ addons:
   services:
     - elasticsearch
 
+before_install:
+  - sleep 10
+
 install: true
 
 script:
