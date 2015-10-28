@@ -12,4 +12,5 @@ addons:
 install: true
 
 script:
+  - cat ~/apt-update.log
   - elasticsearch -v
