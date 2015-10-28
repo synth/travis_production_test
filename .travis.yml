@@ -8,8 +8,8 @@ addons:
       - elasticsearch-1.7
     packages:
       - elasticsearch
-  services:
-    - elasticsearch
+services:
+  - elasticsearch
 
 before_install:
   - sleep 10
