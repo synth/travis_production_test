@@ -1,25 +1,11 @@
 sudo: false
 
 python:
-- '2.7'
-- '3.3'
-- '3.4'
-env:
-  - DJANGO_VERSION="Django>=1.7,<1.8"
-  - DJANGO_VERSION="Django>=1.8,<1.9"
-  - RUN_BROWSER=true
-  - RUN_BROWSER=false
-  - BROWSER_TAG="firefox_latest"
-  - BROWSER_TAG="chrome_latest"
-matrix:
-  include:
-    - addons:
-        sauce_connect: foo
-        user_name: bar
-      python: '2.7'
-  exclude:
-    - python: '2.7'
-    - RUN_BROWSER: true
-    - python: '3.3'
-    - RUN_BROWSER: true
+- '3.5'
+- '3.5.0'
 
+install:
+  - true
+
+script:
+  - true
