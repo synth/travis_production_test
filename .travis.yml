@@ -1,25 +1,22 @@
 language: ruby
 
-sudo: false
+rvm: '2.1.5'
 
 matrix:
   include:
     - sudo: false
-      addons:
-        packages:
-          - foo
-      rvm: 2.1.5
       env:
-        - COMBO=2.1.5_foo
-    - sudo: false
-      addons:
-        packages:
-          - bar
-      rvm: 2.2.0
+        - ENV=docker
+    - sudo: required
+      dist: precise
       env:
-        - COMBO=2.2.0_bar
+        - ENV=precise-gce
+    - sudo: required
+      dist: trusty
+      env:
+        - ENV=trusty-gce
 
 install:
   - true
 script:
-  - true
+  - echo $PATH
