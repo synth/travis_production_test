@@ -6,7 +6,7 @@ php:
 sudo: false
 
 install:
-  - pear --version
+  - pear version
 script:
   - true
 
