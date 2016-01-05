@@ -1,12 +1,12 @@
 language: php
 
 php:
-  - hhvm 
+  - 7
 
 sudo: false
 
 install:
-  - true
+  - pear --version
 script:
-  - cat /etc/hhvm/php.ini
+  - true
 
