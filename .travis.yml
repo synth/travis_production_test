@@ -1,21 +1,16 @@
-language: php
-
+language: ruby
 sudo: required
-dist: trusty
-
-env:
-  - PG_VERSION='9.5'
-  - PG_VERSION='9.6'
-  - PG_VERSION='9.7'
-
+services:
+  - docker
 before_install:
-  - sudo /etc/init.d/postgresql stop
-  - sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main $PG_VERSION" >> /etc/apt/sources.list.d/postgresql.list'
-  - sudo apt-get update
-  - sudo apt-get install postgresql-$PG_VERSION
-
+  - curl -L https://github.com/docker/compose/releases/download/1.4.0/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
 install:
-  - true
-
+  - docker build -t flowerpot/travisdockerexample .
 script:
-  - true
+  - docker-compose run web rspec
+before_deploy:
+  - docker login -e $DOCKER_MAIL -u $DOCKER_USER -p $DOCKER_PASS
+deploy:
+  - docker push flowerpot/travisdockerexample
