@@ -1,12 +1,13 @@
 sudo: false
 
-language: r
+language: ruby
 
 install: true
 
+cache: bundler
+
 script:
-  - echo $R_LIBS_SITE
-  - grep -n export ~/build.sh
+  - true
 
 notifications:
   email: false
