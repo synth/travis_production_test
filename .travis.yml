@@ -1,17 +1,15 @@
-language: ruby
+language: java
 
-sudo: false
+sudo: required
 
-env:
-  global:
-    - secure: "c/iRZIFS5WmnxUpO2Hv8LQh35b/uIeI2hcbV4twOE8ZEtK6pv48lXeIsU26SS8YNIvr3Wuz9B1a02dZHvRjDH0xR8WF2P19Cg9ApoFVDmtg0RhcHZqdyL0+Uc9IelKJsjw4a0QcpMtKK5zzv+MoqMMyMo2rwtHzo68s4O5BvBak="
-    - secure: "YSPq9+gbxOrxEyUAj6wiT25IA672cxMyRFzIxZXnxV7LfMcI3Ext/cXNg46IXF+v31WZMtkqc9RrXOxgheZ5Ld35LrKBY8B24o5fHuaBCEv2qw/2/VRtwumLFaSlgBilcFKhzkFzvsBlAwdZfgAmUChiu0uMTTndDCxpavK8v6A="
-    - secure: "ThqJINJOjtHoV6ObZh7cThMi3S+zX8vN1ZWyTfsf0ZSXvTISu0yY9phdJqjWrdTls2um0ZzEKIBpZ2ZFWWxfcGl7NS8S7VOmqlLaR9qa2E1kCOpzc5P1SdXd2Fj+xwYxu00AtnrdT3zIrkJ58AslUYFn4tRqouuRlVLcyfbKPhQ="
+dist: trusty
+
+group: edge
 
 addons:
-  artifacts:
-    region: 'eu-central-1'
-    paths: 'Gemfile'
+  apt:
+    packages:
+      - oracle-java8-installer
 
 install: true
 
