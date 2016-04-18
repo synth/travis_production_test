@@ -1,20 +1,19 @@
-language: java
+language: ruby
+
+rvm: jruby-19mode
+
+env:
+  global:
+    - JRUBY_OPTS="--server -Dcext.enabled=true -Xcompile.invokedynamic=false"
 
 sudo: required
-
-dist: trusty
-
-group: edge
-
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
 
 install: true
 
 script:
-  - true
+  - jruby -v
+  - unset JRUBY_OPTS
+  - jruby -v
 
 notifications:
   email: false
