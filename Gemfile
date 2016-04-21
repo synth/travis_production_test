@@ -1,4 +1,5 @@
 source "https://rubygems.org"
 
-gem 'i18n'
+gem 'capybara-webkit'
+gem 'mime-types', '< 3.0'
 
