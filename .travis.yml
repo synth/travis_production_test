@@ -5,6 +5,8 @@ rvm:
 
 addons:
   apt:
+    sources:
+      - ubuntu-sdk-team    
     packages:
       - qt4-qmake
 
@@ -16,6 +18,8 @@ sudo: false
 
 before_install:
   - find `rvm config-get prefix` -name mkmf.rb -print -exec sed -i 's/\s*\(abort "mkmf\)/# \1/' {} \;
+install: 
+  - bundle install --full-index --without='development production' --path vendor/bundle --jobs=3 --retry=3
 
 script: true
 
