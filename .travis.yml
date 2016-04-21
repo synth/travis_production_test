@@ -5,8 +5,6 @@ rvm:
 
 addons:
   apt:
-    sources:
-      - ubuntu-sdk-team    
     packages:
       - qt4-qmake
 
